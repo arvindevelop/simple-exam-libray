@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/join.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Home</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      .right-side a {
+        font-weight: bold;
+      }
+      .side {
+        float: left;
+        margin-right: 1%;
+      }
+      .side-right {
+        padding-top: 0.4%;
+      }
+      .photo {
+        width: 100%;
+        height: 600px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .photo {
+          height: 300px;
+        }
+      }
+
+      .exam-tips {
+        height: 462px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .exam-tips {
+          height: 540px;
+        }
+      }
+
+      .aim {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .btn1 {
+        margin-top: 5%;
+      }
+      #contents {
+        margin-bottom: 30px;
+      }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-text, .about-photo {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+  }
+
+  .about-photo {
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .about-photo {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+  }
+
+  .about-para{
+        font-size: large;
+    }
+
+    .about-heading{
+        padding-left: 0%;
+    }
+
+    .testimonial-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 18%; /* Around 5 in a row */
+    max-width: 18%;
+    min-width: 200px;
+    transition: transform 0.3s;
+  }
+
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonial img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .testimonial p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .testimonial h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Responsive for mobile screens */
+  @media (max-width: 768px) {
+    .testimonial {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <div id="nav">
+      <nav class="menubar">
+        <div class="left-side">
+          <img src="photo/logo.svg" width="90px" height="50px" />
+        </div>
+        <div class="right-side" id="myTopnav">
+          <a href="index.html">HOME</a>
+          <a href="#contents">CONTENTS</a>
+          <!-- <a href="about.php">ABOUT US</a> -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!--Navbar end-->
+
+    <!--Header-->
+    <div class="head-container">
+      <h1 class="header">EXAM LIBRARY</h1>
+    </div>
+    <!--Header end-->
+
+    <!--Intro photo-->
+    <div class="intro-photo">
+      <img class="photo" src="photo/intro_photo.png" alt="Library" />
+    </div>
+    <!--Intro photo end-->
+
+    <div class="about-container mb-3" style="background-color: aliceblue;">
+  
+        <!-- Left part: Introduction -->
+        <div class="about-text">
+          <h2 class="about-heading">About Me</h2>
+          <div>
+            <p class="about-para">Hey there! I'm an NITian with a passion for learning, teaching, and helping students navigate the confusing early days of <strong>engineering life.</strong></p>
+          
+            <p class="about-para">I still remember my <strong> first year </strong> tons of subjects, zero clue where to start, and no one to tell me how to actually prepare for exams. That’s exactly why I created this platform to make the 1st-year journey smoother for students like you.</p>
+          
+            <p class="about-para">With 2 years of experience in the software industry and a strong academic foundation, I’ve designed this website to provide you with:</p>
+          
+            <ul class="about-para" style="font-weight: bold;">
+              <li>Clear subject-wise content</li>
+              <li>Exam-focused preparation strategies</li>
+              <li>Smart tips to manage time and studies</li>
+              <!-- <li>Guidance from someone who’s been exactly where you are</li> -->
+            </ul>
+          
+            <p class="about-para">This isn’t just a notes-sharing site. It’s a support system for first-year students who want to study smart and succeed with confidence. I’m here to help you every step of the way.</p>
+          
+            <p class="about-para">Let’s crack this together! 💪</p>
+          </div>
+          
+        </div>
+        
+        <!-- Right part: Photo -->
+        <div class="about-photo">
+          <img src="photo/My_photo.png" alt="My Photo">
+        </div>
+      
+      </div>
+      
+
+    <!--Tips and Motivation-->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img class="exam-tips" src="photo/Exam_tips.jpg" alt="Library" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3 style="text-align: center">Motivation</h3>
+          <p>
+            1. First year is considered to be the most scoring year and yes it
+            is. Score as much as possible.<br /><br />
+            2. Study for knowledge but not for CGPA, but the underlying truth is
+            CGPA is reviewed as a gate pass for interviews(mostly).<br /><br />
+            3. If you study for knowledge, CGPA is achievable. Simply put,
+            Knowledge is directly proportional to CGPA. The key point is gaining
+            the same knowledge at the appropriate time (I mean before exams).<br /><br />
+            4. Never drop any exam for scoring purpose if paper is tough in the
+            first attempt
+          </p>
+          <br />
+          <div class="aim">
+            <img
+              src="photo/aim_photo.gif"
+              style="width: 16%; height: 16%"
+              alt="aim"
+            /><br /><br />
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!--Tips and Motivation end-->
+
+    <!--Subject Contents-->
+    <div id="contents">
+      <div class="row">
+        <div class="column1">
+          <div class="card">
+            <a href="english.html"
+              ><img
+                src="photo/humanities_pic.jpg"
+                width="100%"
+                alt="humanities"
+            /></a>
+            <a
+              href="english.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >English</a
+            >
+          </div>
+        </div>
+        <div class="column1">
+          <div class="card">
+            <a href="maths.html"
+              ><img src="photo/mathematics-subje.jpg" width="100%" alt="math"
+            /></a>
+            <a
+              href="maths.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Mathematics</a
+            >
+          </div>
+        </div>
+        <div class="column1">
+          <div class="card">
+            <a href="physics.html"
+              ><img src="photo/physi.png" width="100%" alt="physics"
+            /></a>
+            <a
+              href="physics.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Physics</a
+            >
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="column1">
+          <div class="card">
+            <a href="environment.html"
+              ><img src="photo/season.jpeg" width="100%" alt="environment"
+            /></a>
+            <a
+              href="environment.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Environmental Science</a
+            >
+          </div>
+        </div>
+        <div class="column1">
+          <div class="card">
+            <a href="computer.html"
+              ><img src="photo/computer_photo.jpeg" width="100%" alt="computer"
+            /></a>
+            <a
+              href="computer.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Computer Science</a
+            >
+          </div>
+        </div>
+        <div class="column1">
+          <div class="card">
+            <a href="electrical.html"
+              ><img
+                src="photo/electical_photo.jpg"
+                width="100%"
+                alt="electrical"
+            /></a>
+            <a
+              href="electrical.html"
+              class="btn1 btn-warning btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Electrical</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Subject Contents end-->
+
+    <div class="testimonial-section">
+        <h2>What People Say</h2>
+      
+        <div class="testimonial-container">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial">
+            <img src="photo/Ravi.png" alt="Person 1">
+            <p>"This site saved me before my semester exams! The notes are concise, the explanations are simple, and it feels like a senior is guiding me personally."</p>
+            <h3>Ravi, 1st Year CSE</h3>
+          </div>
+      
+          <!-- Testimonial 2 -->
+          <div class="testimonial">
+            <img src="photo/Sneha.png" alt="Person 2">
+            <p>"I was so confused about what to study and where to begin. This website gave me clarity, structure, and confidence. Highly recommend it to every fresher!"</p>
+            <h3>Sneha, 1st Year ECE</h3>
+          </div>
+      
+          <!-- Testimonial 3 -->
+          <div class="testimonial">
+            <img src="photo/Arjun.png" alt="Person 3">
+            <p>"What I love most is that everything is exam-oriented. No time-wasting—just the right content explained in an easy way."</p>
+            <h3>Arjun, 1st Year Mechanical</h3>
+          </div>
+      
+          <!-- Testimonial 4 -->
+          <div class="testimonial">
+            <img src="photo/Megha.png" alt="Person 4">
+            <p>"It’s not just about notes. The study tips, motivation, and the way things are organized make this site a go-to for all first-years!"</p>
+            <h3>Megha, 1st Year IT</h3>
+          </div>
+      
+          <!-- Testimonial 5 -->
+          <div class="testimonial">
+            <img src="photo/shalom.png" alt="Person 5">
+            <p>"Super easy to follow and very helpful. Thank you so much!"</p>
+            <h3>Shalom Ben, 1st Year CSE</h3>
+          </div>
+      
+        </div>
+      </div>
+
+    <!--Footer-->
+    <footer
+      style="
+        width: 100%;
+        height: auto;
+        background: #000;
+        color: wheat;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 4px;
+      "
+    >
+      <p>
+        Copyright &copy
+        <a style="text-decoration: none; color: orangered" href="#"
+          >Exam-Library</a
+        >
+        All Rights Reserved | Contact Us: +91 7631353674
+      </p>
+    </footer>
+    <!--Footer end-->
+
+    <!--For bar in small screen-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "right-side") {
+          x.className += " responsive";
+        } else {
+          x.className = "right-side";
+        }
+      }
+      function myFunction1() {
+        var x = document.getElementById("myTopnav1");
+        if (x.className === "right-side") {
+          x.className += " responsive";
+        } else {
+          x.className = "right-side";
+        }
+      }
+    </script>
+    <!--end-->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--end-->
+  </body>
+</html>
